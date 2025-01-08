@@ -1,6 +1,5 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { TabNavigator } from "./TabNavigator";
-import { AboutUsScreen } from "../screens/about_us/AboutUs";
 import { ScreenNamesEnum } from "./ScreenNamesEnum";
 import { Introduce } from "../screens/introduce/Introduce";
 import { Introduce2 } from "../screens/introduce/Introduce2";
@@ -43,7 +42,6 @@ export function RootNavigator() {
                 component={TabNavigator}
                 options={{ headerShown: false }}
             />
-            <Stack.Screen name={ScreenNamesEnum.AboutUs} component={AboutUsScreen} />
         </Stack.Navigator>
     )
 }

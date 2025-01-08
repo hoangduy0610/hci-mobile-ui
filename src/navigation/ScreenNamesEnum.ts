@@ -10,7 +10,6 @@ export enum ScreenNamesEnum {
     Workout = "Workout",
     Nutrition = "Nutrition",
     Progress = "Progress",
-    AboutUs = "AboutUs",
     Introduce = "Introduce",
     Introduce2 = "Introduce2",
     Introduce3 = "Introduce3",
