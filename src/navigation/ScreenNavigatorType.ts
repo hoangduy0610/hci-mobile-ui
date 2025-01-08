@@ -9,4 +9,9 @@ export type TabNavigatorParamList = {
 export type RootNavigatorParamList = {
     [ScreenNamesEnum.TabNavigator]: NavigatorScreenParams<TabNavigatorParamList>;
     [ScreenNamesEnum.AboutUs]: undefined;
+    [ScreenNamesEnum.Introduce]: undefined;
+    [ScreenNamesEnum.Introduce2]: undefined;
+    [ScreenNamesEnum.Introduce3]: undefined;
+    [ScreenNamesEnum.Introduce4]: undefined;
+    [ScreenNamesEnum.Introduce5]: undefined;
 };
