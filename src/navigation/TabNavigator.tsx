@@ -4,6 +4,7 @@ import { WorkoutScreen } from "../screens/workout/WorkoutScreen";
 import { ScreenNamesEnum } from "./ScreenNamesEnum";
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
+import { NutritionScreen } from "../screens/nutrition/NutritionScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -39,7 +40,7 @@ export const TabNavigator = () => {
             />
             <Tab.Screen
                 name={ScreenNamesEnum.Nutrition}
-                component={HomeScreen}
+                component={NutritionScreen}
                 options={{
                     tabBarIcon: ({ color }) => (
                         <MaterialCommunityIcons name="food-apple" size={28} color={color} />
