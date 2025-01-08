@@ -14,7 +14,7 @@ export const Introduce = () => {
 
     useEffect(() => {
         const checkIntroduce = async () => {
-            return;
+            // return;
             const introduce = await AsyncStorage.getItem('isIntroduced');
             if (introduce === 'true') {
                 navigation.navigate(ScreenNamesEnum.TabNavigator, {

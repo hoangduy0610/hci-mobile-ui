@@ -47,7 +47,7 @@ export const HomeScreen = () => {
     const navigation = useNavigation<NativeStackNavigationProp<RootNavigatorParamList>>();
 
     return (
-        <SafeAreaView style={{ flex: 1, backgroundColor: "#212020" }}>
+        <SafeAreaView style={{ flex: 1, backgroundColor: "#212020" }} edges={['top', 'left', 'right']}>
             <ScrollView
                 contentContainerStyle={{ flexGrow: 1, backgroundColor: "#212020" }}
                 keyboardShouldPersistTaps='handled'
