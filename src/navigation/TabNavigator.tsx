@@ -5,6 +5,7 @@ import { ScreenNamesEnum } from "./ScreenNamesEnum";
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import { NutritionScreen } from "../screens/nutrition/NutritionScreen";
+import { ProgressScreen } from "../screens/progress/ProgressScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -16,8 +17,9 @@ export const TabNavigator = () => {
                 tabBarStyle: {
                     backgroundColor: '#B3A0FF',
                 },
-                tabBarActiveTintColor: 'white',
-                tabBarInactiveTintColor: '#232323',
+                tabBarActiveTintColor: '#ffffff',
+                // tabBarInactiveTintColor: '#232323',
+                tabBarInactiveTintColor: '#eae6fc',
             })}
         >
             <Tab.Screen
@@ -49,7 +51,7 @@ export const TabNavigator = () => {
             />
             <Tab.Screen
                 name={ScreenNamesEnum.Progress}
-                component={WorkoutScreen}
+                component={ProgressScreen}
                 options={{
                     tabBarIcon: ({ color }) => (
                         <MaterialCommunityIcons name="progress-check" size={28} color={color} />
