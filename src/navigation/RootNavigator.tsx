@@ -6,6 +6,8 @@ import { Introduce2 } from "../screens/introduce/Introduce2";
 import { Introduce3 } from "../screens/introduce/Introduce3";
 import { Introduce4 } from "../screens/introduce/Introduce4";
 import { Introduce5 } from "../screens/introduce/Introduce5";
+import { ProfileScreen } from "../screens/home/ProfileScreen";
+import { NotificationScreen } from "../screens/home/NotificationScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -35,6 +37,16 @@ export function RootNavigator() {
             <Stack.Screen
                 name={ScreenNamesEnum.Introduce5}
                 component={Introduce5}
+                options={{ headerShown: false }}
+            />
+            <Stack.Screen
+                name={ScreenNamesEnum.User}
+                component={ProfileScreen}
+                options={{ headerShown: false }}
+            />
+            <Stack.Screen
+                name={ScreenNamesEnum.Notification}
+                component={NotificationScreen}
                 options={{ headerShown: false }}
             />
             <Stack.Screen
